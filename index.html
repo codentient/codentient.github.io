@@ -16,6 +16,7 @@
     <header class="site-header">
       <a class="wordmark" href="#top" aria-label="Codentient, home">codentient<span aria-hidden="true">.</span></a>
       <nav class="primary-nav" aria-label="Primary navigation">
+        <a href="#vision">Vision</a>
         <a href="#approach">Approach</a>
         <a href="#practices">Packs</a>
         <a href="#magellan">Magellan</a>
@@ -41,6 +42,48 @@
         <div class="credentials-intro"><span>What we bring</span><p>Senior experience, applied through methods refined in client work.</p></div>
         <div class="credential"><span>Executive perspective</span><p>A team of executives with decades of experience across large companies, PE-backed scale-ups, and start-ups.</p></div>
         <div class="credential"><span>Established methods</span><p>Two battle-tested approaches: AI-first software delivery and DevOps, SRE and platform engineering. <a href="#practices">See the Acceleration Packs <span aria-hidden="true">↗</span></a></p></div>
+      </section>
+
+      <section class="vision chapter" id="vision" aria-labelledby="vision-title">
+        <div class="chapter-rail"><span>The Codentient view</span><span class="rail-rule" aria-hidden="true"></span><span>An argument, in four moves</span></div>
+        <div class="vision-content">
+          <h2 id="vision-title" class="reveal">Software change now<br>outruns <i>human attention.</i></h2>
+          <div class="vision-moves">
+            <div class="vision-move reveal"><span class="folio" aria-hidden="true">I</span><h3>Software is no longer scarce.</h3><p>Engineering capacity was the limit: backlogs, packaged suites, and people as glue all existed because building was expensive. Agents already produce, test, and operate real software. The backlog will not empty — it will multiply.</p></div>
+            <div class="vision-move reveal"><span class="folio" aria-hidden="true">II</span><h3>Human attention is the bottleneck.</h3><p>People have been the integration layer: remembering decisions, correlating signals, catching what breaks. It works while change is slow. At machine speed, more dashboards only turn throughput into overload.</p></div>
+          </div>
+          <figure class="divergence reveal">
+            <figcaption><span>Fig. 1 — Rate of change vs. capacity to review</span><span>Illustrative, not measured data</span></figcaption>
+            <div class="plate">
+              <svg viewBox="0 0 1000 520" aria-hidden="true" focusable="false">
+                <line class="axis" x1="60" y1="30" x2="60" y2="470"/><line class="axis" x1="60" y1="470" x2="970" y2="470"/>
+                <polygon class="wash" fill="var(--rust-light)" points="430,416.9 456,409.9 482,401.3 508,390.7 534,378.2 560,364.1 586,348.3 612,331 638,312.6 664,293.1 690,272.9 716,252 742,230.5 768,208.6 794,186.3 820,163.8 846,141.1 872,118.2 898,95.4 924,72.6 950,50 950,377 430,377"/>
+                <line class="fork" x1="430" y1="377" x2="430" y2="416.9"/>
+                <path class="line-draw line-human" pathLength="100" d="M60,450 C170,412 280,382 430,377 L950,377"/>
+                <path class="line-draw line-change" pathLength="100" d="M60,450 C300,444 430,430 520,385 C640,330 800,180 950,50"/>
+                <line class="rmark" x1="150" y1="414.3" x2="150" y2="428.3" style="animation-delay:.55s"/><line class="rmark" x1="300" y1="381.5" x2="300" y2="395.5" style="animation-delay:.85s"/>
+                <line class="tick" x1="605" y1="338.8" x2="605" y2="352.8" style="animation-delay:1.05s"/><line class="tick" x1="640" y1="314.1" x2="640" y2="328.1" style="animation-delay:1.14s"/><line class="tick" x1="675" y1="287.7" x2="675" y2="301.7" style="animation-delay:1.23s"/><line class="tick" x1="710" y1="259.9" x2="710" y2="273.9" style="animation-delay:1.32s"/><line class="tick" x1="745" y1="231" x2="745" y2="245" style="animation-delay:1.41s"/><line class="tick" x1="780" y1="201.3" x2="780" y2="215.3" style="animation-delay:1.5s"/><line class="tick" x1="815" y1="171.1" x2="815" y2="185.1" style="animation-delay:1.59s"/><line class="tick" x1="850" y1="140.5" x2="850" y2="154.5" style="animation-delay:1.68s"/><line class="tick" x1="885" y1="109.8" x2="885" y2="123.8" style="animation-delay:1.77s"/><line class="tick" x1="920" y1="79.1" x2="920" y2="93.1" style="animation-delay:1.86s"/>
+                <circle class="endpoint" cx="950" cy="50" r="5"/>
+                <text class="svg-label label-rate" x="60" y="18">rate ↑</text>
+                <text class="svg-label label-time" x="970" y="498" text-anchor="end">time →</text>
+                <text class="svg-label label-change" x="948" y="36" text-anchor="end">change</text>
+                <text class="svg-label label-human" x="948" y="406" text-anchor="end">human review</text>
+                <text class="gap-note" x="640" y="352">This gap is where incidents live.</text>
+              </svg>
+              <p class="plate-note"><span aria-hidden="true">*</span>This gap is where incidents live.</p>
+            </div>
+          </figure>
+          <div class="vision-moves">
+            <div class="vision-move reveal"><span class="folio" aria-hidden="true">III</span><h3>The division of labor changes.</h3><p>Human attention moves up — to intent, judgment, authority, consequences. Machines take on what people never could: continuous memory, correlation, verification, routine execution.</p></div>
+            <div class="vision-move reveal"><span class="folio" aria-hidden="true">IV</span><h3>Govern the impact, not the change.</h3><p>Not more gates. Failure kept small, visible, short-lived: hard constraints before, limited blast radius during, fast detection after. Governance at the speed of the system it controls.</p></div>
+          </div>
+          <div class="vision-close reveal">
+            <h3 class="vision-close-title">Codentient makes machine-scale change <em>coherent.</em></h3>
+            <blockquote>Tell us where you're trying to go. We will help you figure out the path, and we will do as much of the work as you want us to.</blockquote>
+            <p class="vision-domains">Applied first to software delivery, platform operations, and IT service management. <a href="#practices">See the Acceleration Packs <span aria-hidden="true">↗</span></a></p>
+            <details class="margin-note"><summary>The strategic test <span aria-hidden="true">+</span></summary><p>Would what we are building still be valuable if the underlying model and coding agent were effectively free? If the answer is no, we are building on the wrong layer.</p></details>
+          </div>
+        </div>
       </section>
 
       <section class="approach chapter" id="approach" aria-labelledby="approach-title">
@@ -78,5 +121,17 @@
 
     <footer class="site-footer"><a class="footer-brand" href="#top">codentient<span aria-hidden="true">.</span></a><p>Business first. AI where it counts.</p><nav aria-label="Social links"><a href="https://t.me/codentient" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://x.com/codentient" target="_blank" rel="noopener noreferrer">X</a><a href="https://youtube.com/@codentient" target="_blank" rel="noopener noreferrer">YouTube</a><a href="https://github.com/codentient" target="_blank" rel="noopener noreferrer">GitHub</a></nav></footer>
   </div>
+  <script>
+    document.documentElement.classList.add('js');
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible', 'is-live');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.18, rootMargin: '0px 0px -6% 0px' });
+    document.querySelectorAll('#vision .reveal').forEach(function (el) { io.observe(el); });
+  </script>
 </body>
 </html>
