@@ -56,23 +56,23 @@
 .plate-note span{color:var(--rust-light);margin-right:.5rem}
 .js .wash,.js .tick,.js .rmark,.js .endpoint,.js .svg-label,.js .gap-note,.js .fork{opacity:0}
 .js .plate-note{opacity:0}
-.is-live .plate-note{animation:wash-in .8s 2s var(--ease) both}
-.is-live .wash{animation:wash-in 1.1s .95s var(--ease) both}
-.is-live .fork{animation:wash-in .5s 1.75s var(--ease) both}
-.is-live .line-draw{stroke-dasharray:100;stroke-dashoffset:100}
-.is-live .line-human{animation:draw-line 1.1s .15s var(--ease) both}
-.is-live .line-change{animation:draw-line 1.7s .15s var(--ease) both}
-.is-live .pulse{animation:pulse-run 1.7s .15s var(--ease) both}
-.is-live .ring{animation:ping 1.15s 2.05s var(--ease) 2 both}
+.divergence.is-live .plate-note{animation:wash-in .8s 2s var(--ease) both}
+.divergence.is-live .wash{animation:wash-in 1.1s .95s var(--ease) both}
+.divergence.is-live .fork{animation:wash-in .5s 1.75s var(--ease) both}
+.divergence.is-live .line-draw{stroke-dasharray:100;stroke-dashoffset:100}
+.divergence.is-live .line-human{animation:draw-line 1.1s .15s var(--ease) both}
+.divergence.is-live .line-change{animation:draw-line 1.7s .15s var(--ease) both}
+.divergence.is-live .pulse{animation:pulse-run 1.7s .15s var(--ease) both}
+.divergence.is-live .ring{animation:ping 1.15s 2.05s var(--ease) 2 both}
 @keyframes pulse-run{0%{offset-distance:0%;opacity:0}10%{opacity:1}90%{opacity:1}100%{offset-distance:100%;opacity:0}}
 @keyframes ping{0%{opacity:.85;transform:scale(1)}100%{opacity:0;transform:scale(3.2)}}
-.is-live .rmark{animation:tick-in .45s var(--ease) both}
-.is-live .tick{animation:tick-in .4s var(--ease) both}
-.is-live .endpoint{animation:wash-in .5s 1.85s var(--ease) both}
-.is-live .svg-label{animation:wash-in .6s var(--ease) both}
-.is-live .label-change{animation-delay:1.5s}
-.is-live .label-human{animation-delay:.9s}
-.is-live .gap-note{animation:wash-in .8s 2s var(--ease) both}
+.divergence.is-live .rmark{animation:tick-in .45s var(--ease) both}
+.divergence.is-live .tick{animation:tick-in .4s var(--ease) both}
+.divergence.is-live .endpoint{animation:wash-in .5s 1.85s var(--ease) both}
+.divergence.is-live .svg-label{animation:wash-in .6s var(--ease) both}
+.divergence.is-live .label-change{animation-delay:1.5s}
+.divergence.is-live .label-human{animation-delay:.9s}
+.divergence.is-live .gap-note{animation:wash-in .8s 2s var(--ease) both}
 @keyframes draw-line{to{stroke-dashoffset:0}}
 @keyframes tick-in{from{opacity:0}to{opacity:1}}
 @keyframes wash-in{from{opacity:0}to{opacity:1}}
@@ -80,10 +80,12 @@
 .promise .endpoint{fill:#d0dfdb}
 .promise-key{display:flex;align-items:center;gap:.75rem;margin:.35rem 0 0;font-size:.9rem;line-height:1.4;font-weight:600;color:#d0dfdb}
 .promise-key-rule{display:block;flex:none;width:2.5rem;border-top:3px solid #d0dfdb}
-.is-live .line-promise{animation:draw-line 1.7s .15s var(--ease) both}
+.divergence.is-live .line-promise{animation:draw-line 1.7s .15s var(--ease) both}
 .vision-close{border-top:1px solid var(--ink);padding-top:clamp(2.5rem,4vw,3.5rem);margin-top:clamp(1rem,2vw,2rem)}
 .vision-close-title{font-size:clamp(2.2rem,4.4vw,3.7rem);line-height:1.05;letter-spacing:-.035em;max-width:20ch}
 .vision-close-title em{color:var(--rust)}
+.vision-close .promise{margin:clamp(1.8rem,3vw,2.8rem) 0 clamp(2rem,3vw,3rem)}
+.vision-close .promise+blockquote{margin-top:0}
 .divergence+div .vision-move:nth-child(2),.vision-moves+.divergence,.vision-moves .reveal:nth-child(2){transition-delay:.14s}
 .vision-close blockquote{margin:clamp(2.2rem,3.5vw,3rem) 0 0;font-size:clamp(1.45rem,2.7vw,2.15rem);line-height:1.32;letter-spacing:-.028em;font-weight:600;max-width:33ch}
 .vision-close blockquote:before{content:"*";display:block;color:var(--rust);font-size:2.6em;line-height:.55;margin-bottom:.9rem;font-weight:500}
